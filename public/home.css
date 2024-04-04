@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    width: 100vw;
+}
+
+.container1 {
+    padding: 0.5rem;
+
+}
+
+.searchbar {
+    display: flex;
+    border: 1px solid rgb(68, 63, 63);
+    padding: 2px;
+}
+
+@media (max-width:960px) {
+    * {
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    #list1 {
+        gap: 10px;
+        
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        flex-shrink: 0.5x;
+        /* justify-content: space-between; */
+
+
+    }
+    #list3{
+        display: none;
+    }
+
+    .navbar {
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        height: 100px;
+        /* overflow: hidden; */
+    }
+    
+
+    .container2 {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .box1 {
+        width: 60%;
+        height: 60%;
+    }
+
+    #addS {
+        width: 100px;
+        height: 100px;
+    }
+
+    #HEAD {
+        /* display: hidden; */
+        border: 1.5px solid black;
+        border-radius: 10px;
+        background-color: rgba(4, 94, 88, 0.679);
+        margin: 0.5rem;
+    }
+
+    .box1 h1 {
+        font-size: large;
+    }
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    border: 2px solid teal;
+    /* width: 90vw; */
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    padding: 1.5rem;
+    background-color: teal;
+    /* overflow: auto; */
+
+}
+
+#list1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65rem;
+    /* border: 3px solid red; */
+}
+
+#list2 {
+    display: flex;
+    /* gap: 0.2rem; */
+    /* border: 3px solid black; */
+}
+
+#list3 {
+    display: flex;
+    align-items: center;
+    /* border: 3px solid black; */
+    gap: 3rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+.container2 {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#addS {
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid teal;
+    border-radius: 1.5rem;
+    height: 80%;
+    width: 30%;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: teal;
+    /* align-content: center; */
+}
+
+#HEAD {
+    text-align: center;
+    /* display: inline; 
+    border: 0.2rem solid black;
+    margin-left:35rem;
+    margin-right:35rem;
+    padding: 0.5rem;
+    background-color: rgb(225, 248, 248);
+    border-radius: 1rem;*/
+}
