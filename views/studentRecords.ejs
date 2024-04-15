@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <!-- Add any CSS links or stylesheets you need -->
+    <link rel="stylesheet" type="text/css" href="/home.css">
+</head>
+<body>
+    <h1>Student Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Caste</th>
+                <th>Admitted In</th>
+                <th>Dropped Out In</th>
+                <th>Reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% students.forEach((student, index) => { %>
+                <tr>
+                    <td><%= index + 1 %></td>
+                    <td><%= student.name %></td>
+                    <td><%= student.age %></td>
+                    <td><%= student.gender %></td>
+                    <td><%= student.caste %></td>
+                    <td><%= student.admittedIn %></td>
+                    <td><%= student.droppedOutIn %></td>
+                    <td><%= student.reason %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
